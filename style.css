@@ -1,16 +1,17 @@
 html{
   font-style: 10px;
+  font-family: '小塚ゴシック pro','Kozuka Gothic Pro',sans-serif;
 }
 a{
-  font-style: 1.6rem;
+  font-size: 1.6rem;
   line-height: 1.5;
 }
 h2{
-  font-style: 4.6rem;
+  font-size: 4.6rem;
   line-height: 1.5;
 }
 p{
-  font-style: 1.6rem;
+  font-size: 1.6rem;
   line-height: 1.5;
 }
 .flex{
@@ -25,17 +26,17 @@ section:not(.mv){
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 80px;
+  padding: 80px 0;
 }
 .wrap{
-  width: 100%;
-  height: 110px;
+  width: 90%;
+  max-width: 1400px;
   margin: 0 auto;
 }
 header{
-  width: 100%;
+  width: 90%;
   height: 110px;
-  max-width: 1400px;
+  max-width: 1200px;
   justify-content: space-between;
   align-items: center;
   padding: 30px 0;
@@ -59,15 +60,15 @@ header ul li:last-of-type{
 header a.header-btn{
   width: 144px;
   height: 50px;
-  background-color: #fdd322;
+  background-color: #FDD322;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 25px;
 }
 .mv{
-  width: 144px;
-  height: 50px;
+  width: 100vw;
+  height: 800px;
   background-image:url(".img/office-620822_640.jpg");
   z-index: -1;
   justify-content: center;
@@ -77,9 +78,6 @@ header a.header-btn{
 .mv h2{
   font-size: 5.4rem;
  }
-.mv h2{
-font-size: 5.4rem;
-}
 .mv p{
   font-size: 1.8rem;
   margin-top: 40px;
@@ -89,7 +87,7 @@ font-size: 5.4rem;
   justify-content: space-around;
 }
 .about div{
-  width: 80%;
+  width: 45%;
   justify-content: space-between;
 }
 .about div{
@@ -106,7 +104,7 @@ font-size: 5.4rem;
 .about img{
   width: 45%;
   max-width: 538px;
-  text-align: left;
+  text-align: right;
 }
 section.service,section.employee{
   max-width: inherit;
@@ -121,10 +119,14 @@ section.service p,section.service h2,section.employee p,section.service h2{
 }
 .service ul{
   flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1120px;
+  margin: 0 auto;
 }
 .service ul li{
   width: 30%;
-  padding:  34px 20px;
+  padding:  34px 0;
 }
 .service  ul li p{
   margin-left: 80px;
@@ -142,10 +144,18 @@ section.service p,section.service h2,section.employee p,section.service h2{
   text-align: center;
   margin-bottom: 60px;
 }
+.news ul{
+  width: 90%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
 .news ul li{
   width: 25%;
-  min-width: 344px;
+  max-width: 344px;
   margin: 0 auto;
+}
+.news ul li img{
+  width: 100%;
 }
 .news ul li h3{
   font-size: 2.4rem;
@@ -156,7 +166,7 @@ section.service p,section.service h2,section.employee p,section.service h2{
   font-size: 1.3rem;
   line-height: 1.5;
   text-align: left;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 .news ul li p:last-of-type{
   font-size: 1.6rem;
@@ -180,13 +190,19 @@ section.service p,section.service h2,section.employee p,section.service h2{
 }
 .employee p{
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 90px;
   color: #fff;
 }
 .employee ul.flex{
   justify-content: space-between;
   max-width: 1120px;
   margin: 0 auto;
+}
+.employee ul li img{
+  padding: 0 5%;
+}
+.employee ul li img:last-of-type{
+  padding-right: 0;
 }
 .employee ul li h3{
   font-size: 2.4rem;
@@ -212,7 +228,6 @@ section.service p,section.service h2,section.employee p,section.service h2{
 .contact{
   width: 100%!important;
   max-width: inherit!important;
-  height: 780px;
   background-image: url(".img/img/meeting-2284501_640.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -241,14 +256,18 @@ section.service p,section.service h2,section.employee p,section.service h2{
   justify-content: center;
   align-items: center;
   background-color: #fdd322;
-  box-shadow:  6px 6px 6px rgba(0,0,0,0);
+  box-shadow:  6px 6px 6px rgba(0,0,0,16);
   border-radius: 100px;
   font-size: 4rem;
-  margin: 40px auto 0;
+  margin: 75px auto 0;
 }
 footer div:first-of-type{
   width: 100%;
   height: auto;
+  background-color: #f5f5f5;
+  padding: 135px 80px;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 footer div:first-of-type ul{
   font-size: 2.4rem;
@@ -266,10 +285,79 @@ footer div:first-of-type ul:first-of-type{
 footer div:last-of-type{
   width: 100%;
   height: 80px;
-  background-color: #0b1e48;
+  background-color: #0b1e4b;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
   font-size: 1.3rem;
+}
+/* レスポンシブ対応 */
+@media only screen and (max-width:1024px){
+  .flex{
+    flex-direction: column;
+  }
+  header{
+    visibility: hidden;
+  }
+  h2,.mv h2{
+    font-size: 2.2rem;
+    /* line-height: 1.5; */
+  }
+  .news ul li h3{
+    font-size: 2.0rem;
+  }
+  p,.mv p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+  .mv div{
+    width: 90%;
+    /* max-width: inherit;
+    margin:  0 auto; */
+  }
+  .about div ,.about img{
+    width: 90%;
+    max-width: inherit;
+    margin: 0 auto;
+
+  }
+  .service ul li{
+    width: 90%;
+    /* max-width: inherit; */
+    margin: o auto;
+  }
+  .news ul li{
+    width: 90%;
+    max-width: inherit;
+    margin: 0 auto 30px;
+  }
+  .employee ul li{
+    text-align: center;
+  }
+  .employee ul li h3{
+    font-size: 2.0rem;
+  }
+  .contact div{
+    width: 75%;
+  }
+  .contact p{
+    font-size: 1.6rem;
+    padding:  0 10px;
+  }
+  .contact a{
+    width: 70%;
+    min-width: 200px;
+    height: 80px;
+    font-size: 1.6rem;
+  }
+  footer div:first-of-type ul li a,footer div:first-of-type ul li{
+    font-size: 1.6rem;
+  }
+  footer ul{
+    width: 95%!important;
+    margin:  0 auto;
+    margin-bottom: 40px;
+    text-align: left;
+  }
 }
