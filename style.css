@@ -1,39 +1,39 @@
-html{
+html {
   font-style: 10px;
-  font-family: '小塚ゴシック pro','Kozuka Gothic Pro',sans-serif;
+  font-family: "小塚ゴシック pro", "Kozuka Gothic Pro", sans-serif;
 }
-a{
+a {
   font-size: 1.6rem;
   line-height: 1.5;
 }
-h2{
+h2 {
   font-size: 4.6rem;
   line-height: 1.5;
 }
-p{
+p {
   font-size: 1.6rem;
   line-height: 1.5;
 }
-.flex{
+.flex {
   display: flex;
 }
-body{
+body {
   width: 100%;
   position: relative;
   box-sizing: border-box;
 }
-section:not(.mv){
+section:not(.mv) {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
   padding: 80px 0;
 }
-.wrap{
+.wrap {
   width: 90%;
   max-width: 1400px;
   margin: 0 auto;
 }
-header{
+header {
   width: 90%;
   height: 110px;
   max-width: 1200px;
@@ -45,28 +45,28 @@ header{
   margin: auto;
   position: absolute;
 }
-header ul{
+header ul {
   align-items: center;
 }
-header ul li{
+header ul li {
   padding: 0 20px;
 }
-header ul li:first-of-type{
+header ul li:first-of-type {
   padding-left: 0;
 }
-header ul li:last-of-type{
+header ul li:last-of-type {
   padding-right: 0;
 }
-header a.header-btn{
+header a.header-btn {
   width: 144px;
   height: 50px;
-  background-color: #FDD322;
+  background-color: #fdd322;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 25px;
 }
-.mv{
+.mv {
   width: 100vw;
   height: 800px;
   background-image: url("img/sample1.png");
@@ -75,22 +75,22 @@ header a.header-btn{
   align-items: center;
   text-align: center;
 }
-.mv h2{
+.mv h2 {
   font-size: 5.4rem;
- }
-.mv p{
+}
+.mv p {
   font-size: 1.8rem;
   margin-top: 40px;
 }
-.about{
+.about {
   /* 各アイテムを均等に配置し各アイテムの両側に半分の大きさの感覚を置く */
   justify-content: space-around;
 }
-.about div{
+.about div {
   width: 80%;
   justify-content: space-between;
 }
-.about div{
+.about div {
   width: 45%;
   max-width: 435px;
   display: flex;
@@ -98,82 +98,86 @@ header a.header-btn{
   justify-content: center;
   text-align: left;
 }
-.about div h2{
+.about div h2 {
   padding-bottom: 33px;
 }
-.about img{
+.about img {
   width: 45%;
   max-width: 538px;
   text-align: right;
 }
-section.service,section.employee{
+section.service,
+section.employee {
   max-width: inherit;
   background-color: #0096e5;
 }
-section.service p,section.service h2,section.employee p,section.service h2{
+section.service p,
+section.service h2,
+section.employee p,
+section.service h2 {
   color: #fff;
 }
-.service div{
+.service div {
   display: flex;
   align-items: center;
 }
-.service ul{
+.service ul {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 90%;
   max-width: 1120px;
   margin: 0 auto;
 }
-.service ul li{
+.service ul li {
   width: 30%;
-  padding:  34px 0;
+  padding: 34px 0;
 }
-.service  ul li p{
+.service ul li p {
   margin-left: 80px;
 }
-.service div h2{
+.service div h2 {
   margin-left: 24px;
   font-size: 3rem;
 }
 /* 上記までは第一回目のcssコーディング */
-.news h2{
+.news h2 {
   text-align: center;
   margin-bottom: 30px;
 }
-.news p{
+.news p {
   text-align: center;
   margin-bottom: 60px;
 }
-.news ul{
+.news ul {
   width: 90%;
   max-width: 1120px;
   margin: 0 auto;
 }
-.news ul li{
+.news ul li {
   width: 25%;
   max-width: 344px;
   margin: 0 auto;
 }
-.news ul li img{
+.news ul li img {
   width: 100%;
 }
-.news ul li h3{
+.news ul li h3 {
   font-size: 2.4rem;
   line-height: 1.5;
   margin-bottom: 20px;
 }
-.news ul li p{
+.news ul li p {
   font-size: 1.3rem;
   line-height: 1.5;
   text-align: left;
   margin: 20px 0;
 }
-.news ul li p:last-of-type{
+.news ul li p:last-of-type {
   font-size: 1.6rem;
   line-height: 1.5;
   margin-bottom: 0;
 }
-.news a{
+.news a {
   width: 144px;
   height: 50px;
   display: flex;
@@ -183,43 +187,43 @@ section.service p,section.service h2,section.employee p,section.service h2{
   background-color: #f2f4f8;
   margin: 80px auto 0;
 }
-.employee h2{
+.employee h2 {
   text-align: center;
   margin-bottom: 30px;
   color: #fff;
 }
-.employee p{
+.employee p {
   text-align: center;
   margin-bottom: 90px;
   color: #fff;
 }
-.employee ul.flex{
+.employee ul.flex {
   justify-content: space-between;
   max-width: 1120px;
   margin: 0 auto;
 }
-.employee ul li{
+.employee ul li {
   padding: 0 5%;
 }
-.employee ul li img{
+.employee ul li img {
   width: 100%;
   max-width: 200px;
 }
-.employee ul li img:last-of-type{
+.employee ul li img:last-of-type {
   padding-right: 0;
 }
-.employee ul li h3{
+.employee ul li h3 {
   font-size: 2.4rem;
   line-height: 1.5;
   text-align: center;
   color: #fff;
-  margin:  20px auto 15px;
+  margin: 20px auto 15px;
 }
-.employee ul li p{
+.employee ul li p {
   margin-bottom: 15px;
   color: #fff;
 }
-.employee a{
+.employee a {
   width: 144px;
   height: 52px;
   display: flex;
@@ -229,9 +233,9 @@ section.service p,section.service h2,section.employee p,section.service h2{
   background-color: #f2f4f8;
   margin: 117px auto 0;
 }
-.contact{
-  width: 100%!important;
-  max-width: inherit!important;
+.contact {
+  width: 100% !important;
+  max-width: inherit !important;
   background-image: url("img/sample7.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -239,33 +243,33 @@ section.service p,section.service h2,section.employee p,section.service h2{
   align-items: center;
   text-align: center;
 }
-.contact div{
+.contact div {
   width: 58%;
   max-width: 1120px;
   height: auto;
   margin: 0 auto;
   text-align: center;
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 55px;
   padding: 115px 0;
 }
-.contact p{
+.contact p {
   margin-top: 30px;
   font-size: 3.1rem;
 }
-.contact a{
+.contact a {
   width: 520px;
   height: 123px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #fdd322;
-  box-shadow:  6px 6px 6px rgba(0,0,0,0.16);
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.16);
   border-radius: 100px;
   font-size: 4rem;
   margin: 75px auto 0;
 }
-footer div:first-of-type{
+footer div:first-of-type {
   width: 100%;
   height: auto;
   background-color: #f5f5f5;
@@ -273,20 +277,20 @@ footer div:first-of-type{
   margin: 0 auto;
   justify-content: space-between;
 }
-footer div:first-of-type ul{
+footer div:first-of-type ul {
   font-size: 2.4rem;
 }
-footer div:first-of-type ul li{
+footer div:first-of-type ul li {
   padding: 20px 0;
 }
-footer div:first-of-type ul li,footer div:first-of-type ul li a{
+footer div:first-of-type ul li a {
   font-size: 1.8rem;
 }
-footer div:first-of-type ul:first-of-type{
+footer div:first-of-type ul:first-of-type {
   width: 50%;
   font-size: 3rem;
 }
-footer div:last-of-type{
+footer div:last-of-type {
   width: 100%;
   height: 80px;
   background-color: #0b1e4b;
@@ -296,81 +300,149 @@ footer div:last-of-type{
   color: #fff;
   font-size: 1.3rem;
 }
+.navbtn{
+  display: none;
+}
 /* レスポンシブ対応 */
-@media only screen and (max-width:1024px){
-  .flex{
+@media only screen and (max-width: 1024px) {
+  .flex {
     flex-direction: column;
   }
-  header{
+  header ul,header .header-btn{
     visibility: hidden;
   }
-  h2,.mv h2{
+  header h1{
+    padding-top: 30px;
+  }
+  header.flex{
+    padding: 0;
+  }
+  header ul li{
+    padding: 20px 0;
+  }
+  header ul.active-nav{
+    visibility: visible;
+    width: 103vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #f5f5f5;
+    z-index: 2;
+    justify-content: center;
+  }
+  /* header {
+    visibility: hidden;
+  } */
+  h2,.mv h2 {
     font-size: 2.2rem;
     line-height: 1.5;
   }
-  .news ul li h3{
-    font-size: 2.0rem;
+  .news ul li h3 {
+    font-size: 2rem;
   }
-  p,.mv p{
+  p,
+  .mv p {
     font-size: 1.6rem;
     line-height: 1.5;
   }
-  .mv div{
+  .mv div {
     width: 90%;
     /* max-width: inherit;
     margin:  0 auto; */
   }
-  .about div ,.about img{
+  .about div,
+  .about img {
     width: 90%;
     max-width: inherit;
     margin: 0 auto;
-
   }
-  .service ul li{
+  .service ul li {
     width: 90%;
     /* max-width: inherit; */
     margin: o auto;
   }
-  .news ul li{
+  .news ul li {
     width: 90%;
     max-width: inherit;
     margin: 0 auto 30px;
   }
-  .employee ul li{
+  .employee ul li {
     text-align: center;
   }
-  .employee ul li h3{
-    font-size: 2.0rem;
+  .employee ul li h3 {
+    font-size: 2rem;
   }
-  .contact div{
+  .contact div {
     width: 75%;
   }
-  .contact p{
+  .contact p {
     font-size: 1.6rem;
-    padding:  0 10px;
+    padding: 0 10px;
   }
-  .contact a{
+  .contact a {
     width: 70%;
     min-width: 200px;
     height: 80px;
     font-size: 1.6rem;
   }
-  footer div:first-of-type ul li a,footer div:first-of-type ul li{
+  footer div:first-of-type ul li a,footer div:first-of-type ul li {
     font-size: 1.6rem;
   }
-  footer ul{
-    width: 95%!important;
-    margin:  0 auto;
+  footer ul {
+    width: 95% !important;
+    margin: 0 auto;
     margin-bottom: 40px;
     text-align: left;
   }
+  .navbtn{
+    display: block;
+    position: absolute;
+    background-color: #ccc;
+    top: 20px;
+    right: 0px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    z-index: 2
+  }
+  .navbtn span{
+    display: inline-block;
+    transition:  all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    background: #000;
+    width: 45%;
+  }
+  .navbtn span:nth-of-type(1){
+    top: 15px;
+  }
+  .navbtn span:nth-of-type(2){
+    top: 23px;
+  }
+  .navbtn span:nth-of-type(3){
+    top: 31px;
+  }
+  .navbtn.active span:nth-of-type(1){
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+  }
+  .navbtn.active span:nth-of-type(2){
+    opacity: 0;
+  }
+  .navbtn.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+  }
 }
-section:not(.mv){
+section:not(.mv) {
   opacity: 0;
   transform: translateY(100px);
   transition: all 1.5s;
 }
-section:not(.mv).scrollin{
+section:not(.mv).scrollin {
   opacity: 1;
   transform: translateY(0);
 }
