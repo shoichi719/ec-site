@@ -10,3 +10,8 @@ $(function(){
     });
   });
 });
+// ハンバーガーメニュー
+$(".navbtn").click(function () {
+  $(this).toggleClass('active');
+  $("header ul").toggleClass('active-nav');
+});
