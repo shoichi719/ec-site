@@ -69,7 +69,7 @@ header a.header-btn{
 .mv{
   width: 100vw;
   height: 800px;
-  background-image: url(".img/sample1.png");
+  background-image: url("img/sample1.png");
   z-index: -1;
   justify-content: center;
   align-items: center;
@@ -232,7 +232,7 @@ section.service p,section.service h2,section.employee p,section.service h2{
 .contact{
   width: 100%!important;
   max-width: inherit!important;
-  background-image: url(".img/sample7.png");
+  background-image: url("img/sample7.png");
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: center;
@@ -364,4 +364,13 @@ footer div:last-of-type{
     margin-bottom: 40px;
     text-align: left;
   }
+}
+section:not(.mv){
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1.5s;
+}
+section:not(.mv).scrollin{
+  opacity: 1;
+  transform: translateY(0);
 }
